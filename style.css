@@ -1,0 +1,54 @@
+html{
+    font-family: 'Geologica', sans-serif;
+}
+body{
+    font-family: 'Geologica', sans-serif;
+    background-image: url('https://061a38cc1e.clvaw-cdnwnd.com/6bcaeae67997544c7cf5f5587b1cbe32/200000000-4188a42862/exter_3.jpg'); background-repeat: no-repeat; background-size: cover;
+    background-color: white;
+}
+body::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.342); /* Adjust the opacity (0.5) to make it darker */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1; /* Place the overlay behind the content */
+}
+
+#mid-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25vh;
+}
+#mid-text h1{
+    font-size: 70px;
+}
+#mid-text p{
+    font-size: 30px;
+    font-weight: lighter;
+}
+#divider{
+ background-color: white;
+ width: 40vw;
+ height: 1px;
+ margin-bottom: 1vh;
+}
+
+
+
+@media (max-width: 767px) {
+    #divider{
+        display: none;
+    }
+    #mid-text{
+        margin-top: 12vh;
+    }
+    #mid-text p{
+        text-align: left;
+        margin-right: auto;
+    }
+}
