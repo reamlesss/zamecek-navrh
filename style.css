@@ -3,33 +3,35 @@ html{
 }
 body{
     font-family: 'Geologica', sans-serif;
-    background-image: url('https://061a38cc1e.clvaw-cdnwnd.com/6bcaeae67997544c7cf5f5587b1cbe32/200000000-4188a42862/exter_3.jpg'); background-repeat: no-repeat; background-size: cover;
     background-color: white;
 }
-body::before {
-    content: "";
-    background: rgba(0, 0, 0, 0.342); /* Adjust the opacity (0.5) to make it darker */
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1; /* Place the overlay behind the content */
-}
+
 
 #mid-text{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 25vh;
+    /* margin-top: 40vh; */
+    color: white;
+    z-index: 1;
+    background-image: url('https://061a38cc1e.clvaw-cdnwnd.com/6bcaeae67997544c7cf5f5587b1cbe32/200000000-4188a42862/exter_3.jpg');
+    
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    
 }
 #mid-text h1{
     font-size: 70px;
+    z-index: 1;
 }
 #mid-text p{
     font-size: 30px;
     font-weight: lighter;
+    z-index: 1;
 }
 #divider{
  background-color: white;
@@ -37,7 +39,14 @@ body::before {
  height: 1px;
  margin-bottom: 1vh;
 }
-
+#background-image{
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+}
+.navbar{
+    z-index: 2;
+}
 
 
 @media (max-width: 767px) {
@@ -46,9 +55,28 @@ body::before {
     }
     #mid-text{
         margin-top: 12vh;
+        color: black;
     }
     #mid-text p{
         text-align: left;
         margin-right: auto;
     }
+    body{
+        font-family: 'Geologica', sans-serif;
+        background-color: white;
+        background-image: none;
+
+        background-color: white;
+    }
+    body::before {
+        content: "";
+        background: rgba(0, 0, 0, 0); /* Adjust the opacity (0.5) to make it darker */
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1; /* Place the overlay behind the content */
+    }
+
 }
