@@ -15,7 +15,8 @@ body{
     /* margin-top: 40vh; */
     color: white;
     z-index: 1;
-    background-image: url('https://061a38cc1e.clvaw-cdnwnd.com/6bcaeae67997544c7cf5f5587b1cbe32/200000000-4188a42862/exter_3.jpg');
+    /* background-image: url('https://061a38cc1e.clvaw-cdnwnd.com/6bcaeae67997544c7cf5f5587b1cbe32/200000000-4188a42862/exter_3.jpg'); */
+    background-image: url(./images/zamecek\ pozadi.png);
     
     width: 100vw;
     height: 100vh;
@@ -27,6 +28,7 @@ body{
 #mid-text h1{
     font-size: 70px;
     z-index: 1;
+    animation: maskUp 1s ;
 }
 #mid-text p{
     font-size: 30px;
@@ -46,7 +48,23 @@ body{
 }
 .navbar{
     z-index: 2;
+    height: 80px;
+    color: white !important; 
 }
+.nav-link{
+    color: white !important; 
+}
+
+
+.darknav{
+    background-color: rgb(32, 32, 32);
+    animation: navColorChange .5s;
+}
+.lightnav{
+    background-color: transparent;
+    animation: navColorChangeReverse .5s;
+}
+
 
 
 @media (max-width: 767px) {
@@ -55,11 +73,16 @@ body{
     }
     #mid-text{
         margin-top: 12vh;
-        color: black;
+        color: white;
+        background-position: 30%;
+        ;
+    }
+    #mid-text h1{
+        text-align: center;
     }
     #mid-text p{
-        text-align: left;
-        margin-right: auto;
+        text-align: center;
+        
     }
     body{
         font-family: 'Geologica', sans-serif;
@@ -80,3 +103,96 @@ body{
     }
 
 }
+
+.dropdown-menu{
+    animation: slideDown .4s ;
+}
+
+@keyframes slideDown {
+    0%{
+        
+        transform:translateY(-10%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+
+@keyframes navColorChange {
+    0%{
+        background-color: transparent;
+        transform:translateY(-10%);
+    }
+    100%{
+        background-color: rgb(32, 32, 32);
+        transform: translateY(0%);
+    }
+}
+@keyframes navColorChangeReverse {
+    0%{
+        background-color: rgb(32, 32, 32);
+        transform:translateY(-10%);
+    }
+    100%{
+        background-color: transparent;
+        transform: translateY(0%);
+    }
+}
+
+
+.news-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+}
+.news-container h2{
+    font-size: 35pt;
+
+}
+.new{
+    margin-top: 5vh;
+    background-color: rgba(190, 191, 192, 0.226);
+    padding: 10px;
+    border-radius: 10px;
+    width: 50vw;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.192);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.new h3{
+    font-size: 40px;
+}
+.new img{
+    width: 30vw;
+    margin-bottom: 1vh;
+    border-radius: 10px;
+}
+
+.cards-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.card{
+    width: 45vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+
+
+/* #more-button{
+    width: 15vw;
+    margin-top: 2vh;
+    background-color: rgb(158, 115, 77);
+    outline: none;
+    border: none;
+    margin-bottom: 2vh;
+} */
+
+
