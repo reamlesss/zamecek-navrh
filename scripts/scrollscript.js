@@ -5,8 +5,7 @@ window.addEventListener("scroll", function () {
     const rect = midText.getBoundingClientRect();
 
  
-    if (rect.bottom <= 0) {
-        
+    if (rect.bottom < 5) {
         navbar.classList.remove('lightnav');
         navbar.classList.add('darknav');
     } else {
