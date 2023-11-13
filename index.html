@@ -18,14 +18,14 @@
     <h1 ">ZÁMEČEK KALIŠTĚ</h1>
     <div id="divider"></div>
     <p class="">PODDUBÍ V POSÁZAVÍ</p>
-  </div>
+  </div>  
 
     <nav class="navbar navbar-expand-lg  fixed-top " id="navbar">
-        <div class="container-fluid">
+        <div class="container-fluid" id="navbg">
           <a class="navbar-brand fw-bold text-light" href="#">ZÁMEČEK KALIŠTĚ
         </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style="border: none; box-shadow: none !important;"> 
+            <span ><img src="./images/three-horizontal-lines-icon.png" alt="" style="width: 7vw;"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
@@ -72,14 +72,14 @@
       <div class="news-container">
         <h2>Udalosti/Novinky</h2>
         <!-- <div class="cards-container"> -->
-        <div class="card mb-3">
+        <div class="card mb-3 new">
           <img src="https://061a38cc1e.clvaw-cdnwnd.com/6bcaeae67997544c7cf5f5587b1cbe32/system_preview_detail_200000009-1de871ee65/bazen03.jpg"" class="card-img-top" alt="news_image">
           <div class="card-body">
             <h5 class="card-title">Nadpis udalosti/novinky</h5>
             <p class="card-text">Text novinky Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum temporibus similique error rem consectetur at neque debitis, corrupti numquam natus. Accusantium </p>
           </div>
         </div>
-        <div class="card  mb-3">
+        <div class="card  mb-3 new">
           <!-- <div class="card-header">Header</div> -->
           <div class="card-body">
             <h5 class="card-title">Novinka bez obrazku</h5>
@@ -193,21 +193,34 @@
       <h2 id="contact-header">Kontakt</h2>
       <div class="kontakt">
         <div class="kontakt_text">
-          <div class="phone-number phone">
+          <div class="phone-number phone sizeup">
             <img src="./images/phoneIcon.png" alt="phoneIcon">
             <p class="phone-number-text">+420 608 568 695</p>
           </div>
-          <div class="phone-number mail">
+          <div class="phone-number mail sizeup">
             <img src="./images/mailIcon.png" alt="mailIcon">
             <p class="phone-number-text"> nazamecku.provoz@seznam.cz</p>
           </div>
-          <div class="phone-number location">
+          <div class="phone-number location sizeup">
             <img src="./images/locationIcon.png" alt="locationIcon">
             <p class="phone-number-text">Poddubí 55, 251 65, Kaliště</p>
           </div>
         </div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2571.341609611879!2d14.762702877082987!3d49.87361107148773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470c783a4bf2411b%3A0xec7e287c07d60512!2zWsOhbWXEjWVrIEthbGnFoXTEmw!5e0!3m2!1scs!2scz!4v1699180049587!5m2!1scs!2scz" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
+
+
+      <!-- <div class="mail-container">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Emailová adresa</label>
+          <input type="email" class="form-control email-form w-100"  id="exampleFormControlInput1" placeholder="adresa@email.cz">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Zpráva</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <button type="button" class="btn text-light " id="send-button" >Poslat</button>
+      </div> -->
 
 
 

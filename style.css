@@ -1,7 +1,9 @@
 html{
     font-family: 'Geologica', sans-serif;
+    scroll-behavior: smooth;
 }
 body{
+    
     margin: 0;
     padding: 0;
     font-family: 'Geologica', sans-serif;
@@ -27,6 +29,7 @@ h2{
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
+
   
     
 }
@@ -79,6 +82,14 @@ h2{
     animation: navColorChangeReverse 1s ease-in;
 }
 
+.darknavbg{
+    animation: navColorChange 3s;
+    
+    background-color: rgb(61, 39, 28);
+}
+.lightnavbg{
+    background-color: transparent;
+}
 
 
 @media (max-width: 767px) {
@@ -86,7 +97,7 @@ h2{
         display: none;
     }
     #mid-text{
-        margin-top: 12vh;
+        /* margin-top: 12vh; */
         color: white;
         background-position: 30%;
         ;
@@ -131,6 +142,26 @@ h2{
         margin-left: 15vw;
         margin-bottom: 5vh;
     }
+    .new{
+        min-width: 70vw;
+    }
+    .new img{
+        min-width: 70vw;
+        justify-self: center;
+        
+        
+    }
+
+
+    .navbar{
+        z-index: 2;
+        height: 80px;
+        
+        color: white !important; 
+        /* transition: 1s all; */
+        /* background-color: rgb(61, 39, 28); */
+    }
+    
 }
 
 .dropdown-menu{
@@ -182,7 +213,7 @@ h2{
     text-align: center;
 
 }
-.new{
+/* .new{
     margin-top: 5vh;
     background-color: rgba(190, 191, 192, 0.226);
     padding: 10px;
@@ -193,7 +224,7 @@ h2{
     justify-content: center;
     align-items: center;
     gap: 10px;
-}
+} */
 .new h3{
     font-size: 40px;
 }
@@ -269,10 +300,21 @@ h2{
 .location p{
     margin-left: 1vw;
 }
+.sizeup{
+    transition: .5s all;
+}
+.sizeup:hover{
+    transform: scale(105%);
+}
 iframe{
     border-radius: 10px;
     border: 1px solid black;
     margin-bottom: 10vh;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.228);
+    transition: 1s all;
+}
+iframe:hover{
+    transform: scale(105%);
 }
 
 
@@ -392,4 +434,16 @@ transition: .5s all;
     border-radius: 10px;
     
     
+}
+
+.mail-container{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    max-width: 100vw;
+}
+.email-form{
+    max-width: 60vw;
+    min-width: 10vw;
 }
