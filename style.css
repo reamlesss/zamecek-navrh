@@ -30,8 +30,6 @@ h2{
     background-repeat: no-repeat;
     background-size: cover;
 
-  
-    
 }
 #mid-text h1{
     font-size: 70px;
@@ -60,6 +58,15 @@ h2{
     color: white !important; 
     /* transition: 1s all; */
     background-color: rgb(61, 39, 28);
+}
+
+.nav-item{
+    transition: .2s all;
+    
+}
+.nav-item:hover{
+    transform: scale(105%);
+    
 }
 
 .navbar-expand-lg{
@@ -229,7 +236,7 @@ h2{
     font-size: 40px;
 }
 .new img{
-    width: 30vw;
+    max-width: 43vw;
     margin-bottom: 1vh;
     border-radius: 10px;
 }
