@@ -10,6 +10,8 @@ body{
 
 h2{
     cursor: default;
+    margin-top: 20vh;
+
     
 }
 
@@ -26,4 +28,8 @@ h2{
 }
 .nav-link{
     color: white !important; 
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* remove the gap so it doesn't close */
 }

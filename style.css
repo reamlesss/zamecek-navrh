@@ -51,6 +51,9 @@ h2{
     z-index: 1;
     width: 100vw;
     height: 100vh;
+ 
+
+    
 }
 .navbar{
     z-index: 2;
@@ -67,6 +70,12 @@ h2{
 .nav-item:hover{
     transform: scale(105%);
     
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    /* remove the gap so it doesn't close */
 }
 
 .navbar-expand-lg{
@@ -152,11 +161,11 @@ h2{
     .new{
         min-width: 70vw;
     }
-    .new img{
+    /* .new img{
         min-width: 70vw;
         justify-self: center;
         
-        
+         */
     }
 
 
