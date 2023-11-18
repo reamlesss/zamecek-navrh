@@ -178,7 +178,7 @@ h2{
         /* background-color: rgb(61, 39, 28); */
     }
     
-}
+
 
 .dropdown-menu{
     animation: slideDown .4s ;
@@ -260,6 +260,38 @@ h2{
     margin-top: 1vh;
     margin-bottom: 1vh;
 }
+
+.card-text-hidden{
+    display: none;
+    animation: hideText 1s;
+
+}
+
+.card-text-show{
+    display: block;
+    animation: showText 1s ;
+
+}
+
+@keyframes showText{
+    0%{
+        opacity: 0%;
+
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+@keyframes hideText {
+    0% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0%;
+    }
+}
+
 
 
 
