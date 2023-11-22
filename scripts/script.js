@@ -39,9 +39,22 @@ function showNewsText() {
         hiddenText.classList.remove('card-text-show');
         hiddenText.classList.add('card-text-hidden');
     }
-    
+}
 
+function changeBackground() {
+    const background = document.getElementById('mid-text');
 
-
+    if (background.classList.contains('mid-bg-1')) {
+        background.classlist.remove('mid-bg-1');
+        background.classList.add('mid-bg-2');
+    }
+    else if (background.classlist.contains('mid-bg-2')) {
+        background.classlist.remove('mid-bg-2');
+        background.classList.add('mid-bg-3');
+    }
+    else if (background.classlist.contains('mid-bg-3')) {
+        background.classlist.remove('mid-bg-3');
+        background.classList.add('mid-bg-1');
+    }
     
 }
