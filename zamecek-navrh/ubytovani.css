@@ -1,0 +1,35 @@
+html{
+    font-family: 'Geologica', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Geologica', sans-serif;
+    background-color: white;
+}
+
+h2{
+    cursor: default;
+    margin-top: 20vh;
+
+    
+}
+
+.navbar{
+    
+    height: 80px;
+    color: white !important; 
+    /* transition: 1s all; */
+    background-color: rgb(61, 39, 28);
+}
+
+.navbar-expand-lg{
+    background-color: rgb(61, 39, 28);
+}
+.nav-link{
+    color: white !important; 
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* remove the gap so it doesn't close */
+}
