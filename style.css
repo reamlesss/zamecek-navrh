@@ -1,11 +1,11 @@
 html {
-  font-family: "Geologica", sans-serif;
+font-family: 'Roboto Slab', serif;
   scroll-behavior: smooth;
 }
 body {
   margin: 0;
   padding: 0;
-  font-family: "Geologica", sans-serif;
+font-family: 'Roboto Slab', serif;
   background-color: white;
 }
 
@@ -24,7 +24,7 @@ h2 {
   /* background-image: url('https://061a38cc1e.clvaw-cdnwnd.com/6bcaeae67997544c7cf5f5587b1cbe32/200000000-4188a42862/exter_3.jpg'); */
 
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -61,10 +61,15 @@ h2 {
 }
 .navbar {
   z-index: 2;
-  height: 80px;
+  height: 10px;
   color: white !important;
+  background-color: rgba(0, 0, 0, 0.365);
   /* transition: 1s all; */
   /* background-color: rgb(61, 39, 28); */
+}
+.navbg{
+  /* background-color: rgba(0, 0, 0, 0.365) ; */
+
 }
 .navbar * {
   transition: 1s all;
@@ -84,15 +89,19 @@ h2 {
 }
 
 .dropdown-menu{
-  background-color: rgba(0, 0, 0, 0.365);
+
   color: white;
   
 }
 .dropdown-item{
-  color: white;
+  color: black;
 }
 .nav-link{
-  color: white;
+  /* color: white; */
+  color: black;
+}
+.navbar-brand{
+  color: black;
 }
 
 .dropdown:hover > .dropdown-menu {
@@ -101,40 +110,45 @@ h2 {
   /* remove the gap so it doesn't close */
 }
 
+.dropdown-menu .dropdown-toggle:hover{
+  background-color: rgba(0, 0, 0, 0.041);
+  border-radius: 10px;
+}
+
 .navbar-expand-lg {
   background-color: rgb(61, 39, 28);
 }
-.nav-link {
-  color: white !important;
-}
 
-.darknav {
-  /* background-color: rgb(32, 32, 32); */
+
+/* .darknav {
+
   background-color: rgb(61, 39, 28);
   animation: navColorChange 0.5s;
   transition: 1s all;
 }
 .lightnav {
   transition: 1s all;
-  /* background-color: red; */
-  background-color: rgba(0, 0, 0, 0.806)
-  /* background-color: transparent; */
+ 
+background-color: rgba(0, 0, 0, 0.365);  
   animation: navColorChangeReverse 1s ease-in;
   
-}
+} */
 
-.darknavbg {
+/* .darknavbg {
   animation: navColorChange 3s;
 
-  background-color: rgb(255, 255, 255);
+background-color: rgba(0, 0, 0, 0.365);
 }
 .lightnavbg {
-  background-color: rgba(0, 0, 0, 0.806)
-}
+  background-color: rgba(0, 0, 0, 0.365);
+} */
 
 @media (max-width: 767px) {
   .lightnav{
     background-color: rgba(0, 0, 0, 0.365);
+  }
+  .lightnavbg{
+  background-color: rgba(0, 0, 0, 0.365);
   }
   .dropdown:hover > .dropdown-menu {
   display: none;
@@ -195,11 +209,11 @@ h2 {
         justify-self: center;
         
          */
-}
+    }
 
 .navbar {
   z-index: 2;
-  height: 80px;
+  height: 60px;
 
   color: white !important;
   /* transition: 1s all; */
@@ -221,7 +235,7 @@ h2 {
 
 @keyframes navColorChange {
   0% {
-    background-color: transparent;
+    /* background-color: transparent; */
     transform: translateY(-10%);
   }
   100% {
@@ -235,7 +249,7 @@ h2 {
     transform: translateY(10%);
   }
   100% {
-    background-color: transparent;
+    /* background-color: transparent; */
     transform: translateY(0%);
   }
 }
