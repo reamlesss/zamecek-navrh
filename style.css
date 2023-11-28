@@ -11,6 +11,7 @@ font-family: 'Roboto Slab', serif;
 
 h2 {
   cursor: default;
+  color: rgb(61, 39, 28);
 }
 
 #mid-text {
@@ -63,20 +64,33 @@ h2 {
   z-index: 2;
   height: 10px;
   color: white !important;
-  background-color: rgba(0, 0, 0, 0.365);
+  /* background-color: rgba(0, 0, 0, 0.365); */
   /* transition: 1s all; */
   /* background-color: rgb(61, 39, 28); */
 }
 .navbg{
   /* background-color: rgba(0, 0, 0, 0.365) ; */
-
+ background-color: rgb(219, 212, 205) ;
 }
 .navbar * {
   transition: 1s all;
 }
-.nav-item {
-  transition: 1s all;
+
+.navbar{
+  animation: navSlideDown 1s;
 }
+.nav-item {
+  transition: 1s all
+
+}
+
+div#navbg {
+    /* background-color: white; */
+    background-color: rgb(219, 212, 205) ;
+    
+}
+
+
 
 .nav-item {
   transition: 0.2s all;
@@ -116,7 +130,7 @@ h2 {
 }
 
 .navbar-expand-lg {
-  background-color: rgb(61, 39, 28);
+  background-color: rgb(219, 212, 205) ;
 }
 
 
@@ -144,12 +158,17 @@ background-color: rgba(0, 0, 0, 0.365);
 } */
 
 @media (max-width: 767px) {
-  .lightnav{
-    background-color: rgba(0, 0, 0, 0.365);
+
+
+  .dropdown:hover > .dropdown-menu {
+  display: none;
+  
+  /* remove the gap so it doesn't close */
+}
+  .scaleUp:hover{
+    transform: scale(100%);
   }
-  .lightnavbg{
-  background-color: rgba(0, 0, 0, 0.365);
-  }
+
   .dropdown:hover > .dropdown-menu {
   display: none;
   margin-top: 0;
@@ -173,34 +192,7 @@ background-color: rgba(0, 0, 0, 0.365);
   .card {
     max-width: 100vw;
   }
-  .kontakt {
-    flex-direction: column;
-    text-align: center;
-
-    /* /* justify-content: center; */
-    align-items: center;
-  }
-  .kontakt_text {
-    max-width: 100vw;
-    width: 100vw;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .phone-number img {
-    width: 50vw;
-    min-width: 15vw;
-  }
-  .mail img {
-    width: 100vw;
-  }
-  .mail p {
-    margin-left: 1vw;
-  }
-  .location {
-    margin-left: 15vw;
-    margin-bottom: 5vh;
-  }
+  
   .new {
     min-width: 70vw;
   }
@@ -231,6 +223,17 @@ background-color: rgba(0, 0, 0, 0.365);
   100% {
     transform: translateY(0%);
   }
+}
+
+
+@keyframes navSlideDown{
+  0%{
+    transform: translateY(-100%);
+  }
+  100%{
+    transform: translateY(0%);
+  }
+  
 }
 
 @keyframes navColorChange {
@@ -373,9 +376,12 @@ background-color: rgba(0, 0, 0, 0.365);
 iframe {
   border-radius: 10px;
   border: 1px solid black;
-  margin-bottom: 10vh;
+  /* margin-bottom: 10vh; */
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.228);
   transition: 1s all;
+  max-width: 400px;
+  max-height: 250px;
+  
 }
 iframe:hover {
   transform: scale(105%);
@@ -480,10 +486,13 @@ iframe:hover {
   display: flex;
   justify-content: center;
   margin-top: 5vh;
+  
 }
 .table {
   max-width: 50vw;
   transition: 0.5s all;
+  background-color: transparent !important;
+
 }
 
 .table:hover {
