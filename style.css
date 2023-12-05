@@ -420,10 +420,12 @@ iframe:hover {
 }
 
 .btn {
-  background-color: rgb(61, 39, 28);
+  /* background-color: rgb(61, 39, 28); */
+  background-color: rgb(219, 212, 205) ;
   outline: none;
   border: none;
   transition: 0.5s all;
+  color: black;
 }
 
 .more-photos-button {
@@ -432,14 +434,17 @@ iframe:hover {
   margin-top: 3vh;
   margin-bottom: 3vh;
   transition: 1s;
+  color: black;
 }
 #more-photos-button {
   padding-left: 5vw;
+  color: black;
   padding-right: 5vw;
 }
 .btn:hover {
   transform: scale(105%);
-  background-color: rgb(48, 25, 13);
+  background-color: rgb(219, 212, 205) ;
+  color: black;
 }
 
 .gallery-container2-hidden {

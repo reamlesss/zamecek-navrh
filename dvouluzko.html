@@ -12,9 +12,9 @@
     <title>Dvojlůžkové pokoje</title>
 </head>
 <body style="background-color: white">
-    <nav class="navbar navbar-expand-lg  fixed-top shadow-lg" id="navbar" style="background-color: white">
+    <nav class="navbar navbar-expand-lg  fixed-top shadow-lg" id="navbar" style="background-color:rgb(219, 212, 205)">
       <div class="container-fluid" id="navbg">
-        <a class="navbar-brand text-dark" href="#">ZÁMEČEK KALIŠTĚ
+        <a class="navbar-brand text-dark" href="index.html">ZÁMEČEK KALIŠTĚ
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
           aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"
@@ -24,7 +24,7 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active scaleUp" aria-current="page" href="#">Úvod</a>
+              <a class="nav-link active scaleUp" aria-current="page" href="index.html">Úvod</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle text-dark scaleUp" href="./ubytovani.html" role="button"
@@ -71,8 +71,6 @@
     
                   </ul>
                 </li>
-    
-    
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -82,7 +80,7 @@
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Zámecká restaurace</a></li>
-                <li><a class="dropdown-item" href="#">Zámecká vinarna</a></li>
+                <li><a class="dropdown-item" href="#">Zámecká vinarna</a></li>3
                 <li><a class="dropdown-item" href="#">Krčma na břehu</a></li>
               </ul>
             <li class="nav-item">
@@ -103,12 +101,18 @@
       </div>
     </nav>
 
+
+    <div class="container d-flex flex-row " style="margin-top: 170px; gap: 100px;">
       
-      <h2 style="font-size: 40px; text-align: center; margin-bottom: 50px; margin-top: 100px;">Dvoulůžkové pokoje <br> s vlastní koupelnou </h2>
+      <div class="d-flex justify-content-center flex-column align-items-center">
+      <h2 style="font-size: 40px; text-align: center; margin-bottom: 50px; margin-top: 100px;">Dvoulůžkové pokoje  s vlastní koupelnou </h2>
+      <button type="button" class="btn btn-primary w-50">Rezervovat</button>
+      </div>
+
       
-      <div class="container d-flex justify-content-center">
-        <div id="carouselExample" class="carousel slide w-75">
-          <div class="carousel-inner">
+    
+        <div id="carouselExample" class="carousel slide w-75 ">
+          <div class="carousel-inner rounded">
             <div class="carousel-item active">
               <img src="./images/pokojfotka.jpg" class="d-block w-100" alt="...">
             </div>
@@ -128,7 +132,40 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
+      
+
       </div>
+
+      <div class="container d-flex justify-content-center align-items-center flex-column text-center" style="margin-top: 100px;">
+        <h2 class="mb-4">Popis</h2>
+        <p class="fs-4">Jedná se o útulný podkrovní dvoulůžkový pokoj vybavený dvěma samostatnými postelemi z přírodního masivu, které lze k
+        sobě dle potřeby přisunout. Na zemi jsou dřevěné podlahy a celý pokoj tak působí útulným dojmem. Tento pokoj má vlastní
+        koupelnu s vanou, umyvadlem a wc.</p>
+      </div>
+
+      <footer style="background-color:rgb(219, 212, 205); width: 100vw; height: 300px; margin-top: 200px;"
+        class="d-flex justify-content-center shadow-lg">
+        <div class="d-flex flex-direction-row align-items-center" style="gap: 100px;">
+          <h2 class="text-dark">ZÁMEČEK <br>KALIŠTĚ</h2>
+          <ul class="nav flex-row justify-content-center align-items-center" style="gap: 100px;">
+            <li class="nav-item">
+              <img src="./images/phoneIcon.png" alt="">
+              <p style="margin: 0;">+420 603 543 629</p>
+              <p> +420 603 543 629</p>
+            </li>
+            <li class="nav-item flex-column justify-content-center align-items-center">
+              <img src="./images/mailIcon.png" alt="" style="max-width: 100px; margin-left: 60px; margin-bottom: 10px;">
+              <p>nazamecku.provoz@seznam.cz</p>
+            </li>
+          </ul>
+      
+      
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2571.341609611879!2d14.762702877082987!3d49.87361107148773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470c783a4bf2411b%3A0xec7e287c07d60512!2zWsOhbWXEjWVrIEthbGnFoXTEmw!5e0!3m2!1scs!2scz!4v1701177312625!5m2!1scs!2scz"
+            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </footer>
 
       
 
