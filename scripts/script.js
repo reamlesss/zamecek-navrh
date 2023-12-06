@@ -61,3 +61,8 @@ function changeBackground() {
 }
 
 setInterval(changeBackground, 60000);
+
+
+function toUbytovani() {
+  window.location.href ='ubytovani.html'
+}
