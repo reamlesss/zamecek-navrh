@@ -157,6 +157,10 @@ background-color: rgba(0, 0, 0, 0.365);
   background-color: rgba(0, 0, 0, 0.365);
 } */
 
+.mobile-reserve-container{
+  display: none;
+}
+
 @media (max-width: 767px) {
 
 
@@ -204,6 +208,25 @@ background-color: rgba(0, 0, 0, 0.365);
   .ubyt-card .carousel{
     display: none !important;
   }
+
+  .pokoj-container{
+    flex-direction: column !important;
+    align-items: center;
+  }
+  .pokoj-container .carousel{
+    width: 400px !important;
+    
+  }
+  .header-container button, .header-container p{
+      display: none;
+  }
+  .mobile-reserve-container{
+    display: flex;
+    gap: 0px !important;
+    margin-top: 0;
+  }
+  
+
   /* .new img{
         min-width: 70vw;
         justify-self: center;
