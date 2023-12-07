@@ -39,6 +39,9 @@ h2 {
 .mid-bg-3{
     background-image: url(./images/pokojfotka.jpg);
 }
+.mid-bg-4{
+  background-image: url(./images/sauna.jpg);
+}
 #mid-text h1 {
   font-size: 70px;
   z-index: 1;

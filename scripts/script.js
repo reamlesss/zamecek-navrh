@@ -49,6 +49,9 @@ function changeBackground() {
     midbg.classList.add("mid-bg-3");
   } else if (midbg.classList.contains("mid-bg-3")) {
     midbg.classList.remove("mid-bg-3");
+    midbg.classList.add("mid-bg-4");
+  } else if (midbg.classList.contains("mid-bg-4")) {
+    midbg.classList.remove("mid-bg-4");
     midbg.classList.add("mid-bg-1");
   }
 }
