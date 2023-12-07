@@ -10,24 +10,17 @@ function showGallery2() {
   gallery2.classList.add("gallery-container2");
 }
 
-
-
 function hideGallery2() {
   const button = document.getElementById("more-photos-button");
   const hideButton = document.getElementById("less-photos-button");
   hideButton.classList.add("less-photos-button-hide");
   hideButton.classList.remove("less-photos-button-show");
-  button.style.display = "flex";  
+  button.style.display = "flex";
 
   const gallery2 = document.getElementById("gallery2");
   gallery2.classList.add("gallery-container2-hidden");
   gallery2.classList.remove("gallery-container2");
 }
-
-
-
-
-
 
 function showNewsText() {
   const hiddenText = document.getElementById("hidden-text");
@@ -60,9 +53,8 @@ function changeBackground() {
   }
 }
 
-setInterval(changeBackground, 60000);
-
+setInterval(changeBackground, 10000);
 
 function toUbytovani() {
-  window.location.href ='ubytovani.html'
+  window.location.href = "ubytovani.html";
 }
