@@ -28,13 +28,15 @@ h2 {
   height: 100vh;
   background-repeat: no-repeat;
   background-size: 100vw  100vh;
-   transition: background-image 1s ease;
-}
+  transition: background-image 1s ease;
+}                                              
+
+
 
 .mid-bg-1 {
- background-image: url(./images/zamecek\ pozadi.png);
-
+ background-image: url(./images/uvodni.jpg);
 }
+
 .mid-bg-2 {
     background-image: url(./images/bazenfotka.jpg);
 }
@@ -116,7 +118,7 @@ div#navbg {
   color: black;
 }
 .nav-link{
-  /* color: white; */
+  
   color: black;
 }
 .navbar-brand{
@@ -139,29 +141,6 @@ div#navbg {
 }
 
 
-/* .darknav {
-
-  background-color: rgb(61, 39, 28);
-  animation: navColorChange 0.5s;
-  transition: 1s all;
-}
-.lightnav {
-  transition: 1s all;
- 
-background-color: rgba(0, 0, 0, 0.365);  
-  animation: navColorChangeReverse 1s ease-in;
-  
-} */
-
-/* .darknavbg {
-  animation: navColorChange 3s;
-
-background-color: rgba(0, 0, 0, 0.365);
-}
-.lightnavbg {
-  background-color: rgba(0, 0, 0, 0.365);
-} */
-
 .mobile-reserve-container{
   display: none;
 }
@@ -172,7 +151,7 @@ background-color: rgba(0, 0, 0, 0.365);
   .dropdown:hover > .dropdown-menu {
   display: none;
   
-  /* remove the gap so it doesn't close */
+  
 }
   .scaleUp:hover{
     transform: scale(100%);
@@ -181,7 +160,7 @@ background-color: rgba(0, 0, 0, 0.365);
   .dropdown:hover > .dropdown-menu {
   display: none;
   margin-top: 0;
-  /* remove the gap so it doesn't close */
+  
 }
   #divider {
     display: none;
@@ -189,8 +168,30 @@ background-color: rgba(0, 0, 0, 0.365);
   #mid-text {
     /* margin-top: 12vh; */
     color: white;
-    background-position: 30%;
+    /* background-position: 30%; */
+    /* background-size: 100vw 70vh; */
+    background-size: cover;
+
   }
+
+
+  .mid-bg-1 {
+ background-image: url(./images/uvodni.jpg);
+  background-position: 50%;
+}
+
+.mid-bg-2 {
+    background-image: url(./images/bazenfotka.jpg);
+    background-position: 30%;
+}
+.mid-bg-3{
+    background-image: url(./images/pokojfotka.jpg);
+    background-position: 30%;
+}
+.mid-bg-4{
+  background-image: url(./images/sauna.jpg);
+  background-position: 30%;
+}
   #mid-text h1 {
     text-align: center;
   }
@@ -327,7 +328,7 @@ background-color: rgba(0, 0, 0, 0.365);
 .new img {
   max-width: 43vw;
   margin-bottom: 1vh;
-  border-radius: 10px;
+  border-radius: 5px 5px 0px 0px;
 }
 
 .cards-container {
@@ -515,6 +516,7 @@ iframe:hover {
   padding-left: 5vw;
   padding-right: 5vw;
   margin-bottom: 5vh;
+  color: black !important;
 }
 .less-photos-button-hide {
   display: none;
