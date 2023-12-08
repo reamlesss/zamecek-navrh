@@ -144,6 +144,15 @@ div#navbg {
 .mobile-reserve-container{
   display: none;
 }
+.mobile-ubyt-carousel{
+  display: none ;
+}
+.ubyt-card button{
+  transform: scale(120%);
+}
+.ubyt-card button:hover{
+  transform: scale(130%);
+}
 
 @media (max-width: 767px) {
 
@@ -211,8 +220,24 @@ div#navbg {
     flex-direction: column !important;
   }
 
-  .ubyt-card .carousel{
-    display: none !important;
+ .pc-carousel{
+  display: none ;
+ }
+ .ubyt-card button{
+    transform: scale(120%);
+ }
+
+ .ubyt-card h2{
+  
+  margin-top: 40px !important;
+ }
+  .mobile-ubyt-carousel{
+    display: flex !important;
+    transform: scale(110%);
+    align-self: center;
+    margin-top: 40px !important;
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.396); */
+    
   }
 
   .pokoj-container{
