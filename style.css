@@ -1,11 +1,11 @@
 html {
-font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   scroll-behavior: smooth;
 }
 body {
   margin: 0;
   padding: 0;
-font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   background-color: rgb(249, 238, 226) !important;
 }
 
@@ -27,26 +27,24 @@ h2 {
   width: 100vw;
   height: 100vh;
   background-repeat: no-repeat;
-  background-size: 100vw  100vh;
+  background-size: 100vw 100vh;
   transition: background-image 1s ease;
-}                                              
-
-
+}
 
 .mid-bg-1 {
- background-image: url(./images/uvodni.jpg);
+  background-image: url(./images/uvodni.jpg);
 }
 
 .mid-bg-2 {
-    background-image: url(./images/bazenfotka.jpg);
+  background-image: url(./images/bazenfotka.jpg);
 }
-.mid-bg-3{
-    background-image: url(./images/pokojfotka.jpg);
+.mid-bg-3 {
+  background-image: url(./images/pokojfotka.jpg);
 }
-.mid-bg-4{
+.mid-bg-4 {
   background-image: url(./images/sauna.jpg);
 }
-.mid-bg-5{
+.mid-bg-5 {
   background-image: url(./images/zamecek_v_noci.jpg);
 }
 #mid-text h1 {
@@ -78,54 +76,48 @@ h2 {
   /* transition: 1s all; */
   /* background-color: rgb(61, 39, 28); */
 }
-.navbg{
+.navbg {
   /* background-color: rgba(0, 0, 0, 0.365) ; */
- background-color: rgb(219, 212, 205) ;
+  background-color: rgb(219, 212, 205);
 }
 .navbar * {
   transition: 1s all;
 }
 
-.navbar{
+.navbar {
   animation: navSlideDown 1s;
 }
 .nav-item {
-  transition: 1s all
-
+  transition: 1s all;
 }
 
 div#navbg {
-    /* background-color: rgba(255, 255, 255, 0.113); */
-    /* background-color: rgb(219, 212, 205) ; */
+  /* background-color: rgba(255, 255, 255, 0.113); */
+  /* background-color: rgb(219, 212, 205) ; */
   /* background-color: rgb(249, 238, 226); */
   background-color: #504538;
-    
 }
-
-
 
 .nav-item {
   transition: 0.2s all;
 }
-.scaleUp{
+.scaleUp {
   transition: 0.2s all;
 }
 .scaleUp:hover {
   transform: scale(105%);
 }
 
-.dropdown-menu{
-
+.dropdown-menu {
   color: white;
-  
 }
-.dropdown-item{
+.dropdown-item {
   color: black !important;
 }
-.nav-link{
-  color: white !important;  
+.nav-link {
+  color: white !important;
 }
-.navbar-brand{
+.navbar-brand {
   color: white !important;
 }
 
@@ -135,48 +127,40 @@ div#navbg {
   /* remove the gap so it doesn't close */
 }
 
-.dropdown-menu .dropdown-toggle:hover{
+.dropdown-menu .dropdown-toggle:hover {
   background-color: rgba(0, 0, 0, 0.041);
   border-radius: 10px;
 }
 
 .navbar-expand-lg {
-  background-color: rgb(219, 212, 205) ;
+  background-color: rgb(219, 212, 205);
 }
 
-
-.mobile-reserve-container{
+.mobile-reserve-container {
   display: none;
 }
-.mobile-ubyt-carousel{
-  display: none ;
+.mobile-ubyt-carousel {
+  display: none;
 }
-.ubyt-card button{
+.ubyt-card button {
   transform: scale(120%);
 }
-.ubyt-card button:hover{
+.ubyt-card button:hover {
   transform: scale(130%);
 }
 
-
-
 @media (max-width: 767px) {
-
-
   .dropdown:hover > .dropdown-menu {
-  display: none;
-  
-  
-}
-  .scaleUp:hover{
+    display: none;
+  }
+  .scaleUp:hover {
     transform: scale(100%);
   }
 
   .dropdown:hover > .dropdown-menu {
-  display: none;
-  margin-top: 0;
-  
-}
+    display: none;
+    margin-top: 0;
+  }
   #divider {
     display: none;
   }
@@ -186,27 +170,25 @@ div#navbg {
     /* background-position: 30%; */
     /* background-size: 100vw 70vh; */
     background-size: cover;
-
   }
 
-
   .mid-bg-1 {
- background-image: url(./images/uvodni.jpg);
-  background-position: 50%;
-}
+    background-image: url(./images/uvodni.jpg);
+    background-position: 50%;
+  }
 
-.mid-bg-2 {
+  .mid-bg-2 {
     background-image: url(./images/bazenfotka.jpg);
     background-position: 30%;
-}
-.mid-bg-3{
+  }
+  .mid-bg-3 {
     background-image: url(./images/pokojfotka.jpg);
     background-position: 30%;
-}
-.mid-bg-4{
-  background-image: url(./images/sauna.jpg);
-  background-position: 30%;
-}
+  }
+  .mid-bg-4 {
+    background-image: url(./images/sauna.jpg);
+    background-position: 30%;
+  }
   #mid-text h1 {
     text-align: center;
   }
@@ -217,52 +199,49 @@ div#navbg {
   .card {
     max-width: 100vw;
   }
-  
+
   .new {
     min-width: 70vw;
   }
 
-  .ubyt-card{
+  .ubyt-card {
     flex-direction: column !important;
   }
 
- .pc-carousel{
-  display: none ;
- }
- .ubyt-card button{
+  .pc-carousel {
+    display: none;
+  }
+  .ubyt-card button {
     transform: scale(120%);
- }
+  }
 
- .ubyt-card h2{
-  
-  margin-top: 40px !important;
- }
-  .mobile-ubyt-carousel{
+  .ubyt-card h2 {
+    margin-top: 40px !important;
+  }
+  .mobile-ubyt-carousel {
     display: flex !important;
     transform: scale(110%);
     align-self: center;
     margin-top: 40px !important;
     /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.396); */
-    
   }
 
-  .pokoj-container{
+  .pokoj-container {
     flex-direction: column !important;
     align-items: center;
   }
-  .pokoj-container .carousel{
+  .pokoj-container .carousel {
     width: 400px !important;
-    
   }
-  .header-container button, .header-container p{
-      display: none;
+  .header-container button,
+  .header-container p {
+    display: none;
   }
-  .mobile-reserve-container{
+  .mobile-reserve-container {
     display: flex;
     gap: 0px !important;
     margin-top: 0;
   }
-  
 
   /* .new img{
         min-width: 70vw;
@@ -270,22 +249,21 @@ div#navbg {
         
          */
 
-
-         footer{
-            flex-direction: column !important;
-            height: 1000px !important;
-         }
-         .footer-div{
-          flex-direction: column;
-         }
-         .footer-div h2{
-          text-align: center;
-          font-size: 50px;
-         }
-         iframe{
-          width: 350px;
-         }
-    }
+  footer {
+    flex-direction: column !important;
+    height: 1000px !important;
+  }
+  .footer-div {
+    flex-direction: column;
+  }
+  .footer-div h2 {
+    text-align: center;
+    font-size: 50px;
+  }
+  iframe {
+    width: 350px;
+  }
+}
 
 .navbar {
   z-index: 2;
@@ -309,15 +287,13 @@ div#navbg {
   }
 }
 
-
-@keyframes navSlideDown{
-  0%{
+@keyframes navSlideDown {
+  0% {
     transform: translateY(-100%);
   }
-  100%{
+  100% {
     transform: translateY(0%);
   }
-  
 }
 
 @keyframes navColorChange {
@@ -351,6 +327,13 @@ div#navbg {
 .news-container h2 {
   font-size: 40px;
   text-align: center;
+}
+.new {
+  background-color: white !important;
+  padding: 10px;
+  border: none !important;
+  display: flex;
+  flex-direction: row;
 }
 
 .new h3 {
@@ -401,8 +384,7 @@ div#navbg {
   }
 }
 
-
-#more-button{
+#more-button {
   color: black;
 }
 
@@ -461,7 +443,6 @@ iframe {
   transition: 1s all;
   max-width: 400px;
   max-height: 250px;
-  
 }
 iframe:hover {
   transform: scale(105%);
@@ -508,7 +489,7 @@ iframe:hover {
   transition: 0.5s all;
   color: rgb(255, 255, 255);
 }
-.btn:active{
+.btn:active {
   background-color: transparent !important;
 }
 
@@ -532,16 +513,12 @@ iframe:hover {
   padding-right: 5vw;
 }
 
-
 .gallery-container2-hidden {
   display: none;
   opacity: 0%;
   transition: 1s all;
 }
 
-.card:hover {
-  transform: scale(105%);
-}
 .card {
   transition: 0.5s all;
 }
@@ -578,13 +555,11 @@ iframe:hover {
   display: flex;
   justify-content: center;
   margin-top: 5vh;
-  
 }
 .table {
   max-width: 50vw;
   transition: 0.5s all;
   background-color: transparent !important;
-
 }
 
 .table:hover {
@@ -603,12 +578,12 @@ iframe:hover {
   max-width: 100vw;
 }
 .email-form {
-  max-width:  800px !important;
+  max-width: 800px !important;
   /* min-width: 800px; */
 }
 
-.ubyt-card{
-  background-color: rgba(219, 212, 205, 0.389) ;
+.ubyt-card {
+  background-color: rgba(219, 212, 205, 0.389);
   padding: 20px;
   border-radius: 10px;
   transform: scale(85%);
@@ -617,8 +592,6 @@ iframe:hover {
   transition: 1s all;
   /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.115); */
 }
-.ubyt-card:hover{
+.ubyt-card:hover {
   transform: scale(90%);
 }
-
-
