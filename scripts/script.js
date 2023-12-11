@@ -52,7 +52,11 @@ function changeBackground() {
     midbg.classList.add("mid-bg-4");
   } else if (midbg.classList.contains("mid-bg-4")) {
     midbg.classList.remove("mid-bg-4");
-    midbg.classList.add("mid-bg-1");
+    midbg.classList.add("mid-bg-5");
+  }
+  else if (midbg.classList.contains("mid-bg-5")) {
+    midbg.classList.remove("mid-bg-5");
+    midbg.classList.add('mid-bg-1');
   }
 }
 

@@ -16,7 +16,7 @@
 </head>
 <!-- background-color: rgb(219, 212, 205) -->
 
-<body style="background-color: white">
+<body >
 
   <div id="mid-text" class="mid-bg-1">
 
@@ -27,97 +27,94 @@
 
 
 
-  <nav class="navbar navbar-expand-lg  fixed-top shadow-lg" id="navbar" style="background-color: rgb(219, 212, 205) ;">
-    <div class="container-fluid" id="navbg">
-      <a class="navbar-brand text-dark" href="#" style="margin-left: 5px;"> ZÁMEČEK KALIŠTĚ
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"
-        style="border: none; box-shadow: none !important;">
-        <span><img src="./images/three-horizontal-lines-icon.png" alt="" style="width: 7vw;"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active scaleUp" aria-current="page" href="#">Úvod</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-dark scaleUp" href="./ubytovani.html" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false" onclick="toUbytovani()">
-              Ubytování
-            </a>
-            <ul class="dropdown-menu ">
+<nav class="navbar navbar-expand-lg  fixed-top shadow-sm " id="navbar" style="background-color:#504538">
+  <div class="container-fluid" id="navbg">
+    <a class="navbar-brand text-dark" href="index.html">ZÁMEČEK KALIŠTĚ
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"
+      style="border: none; box-shadow: none !important;">
+      <span><img src="./images/three-horizontal-lines-icon.png" alt="" style="width: 7vw;"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active scaleUp" aria-current="page" href="index.html">Úvod</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark scaleUp" href="./ubytovani.html" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Ubytování
+          </a>
+          <ul class="dropdown-menu ">
 
-              <li class="nav-item dropend ">
-                <a class="nav-link dropdown-toggle text-dark" href="./ubytovani.html" role="button"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  Dvoulůžkový pokoj
-                </a>
-                <ul class="dropdown-menu ">
-                  <li><a class="dropdown-item" href="./dvouluzko.html">S vlastní koupelnou</a></li>
+            <li class="nav-item dropend ">
+              <a class="nav-link dropdown-toggle text-dark" href="./ubytovani.html" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Dvoulůžkový pokoj
+              </a>
+              <ul class="dropdown-menu ">
+                <li><a class="dropdown-item" href="./dvouluzko.html">S vlastní koupelnou</a></li>
 
-                  <li><a class="dropdown-item" href="#">Se společnou koupelnou </a></li>
-
-
-
-                </ul>
-              </li>
+                <li><a class="dropdown-item" href="#">Se společnou koupelnou </a></li>
+              </ul>
+            </li>
 
 
-              <li class="nav-item dropend ">
-                <a class="nav-link dropdown-toggle text-dark" href="./ubytovani.html" role="button"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  Třílůžkový pokoj
-                </a>
-                <ul class="dropdown-menu ">
-                  <li><a class="dropdown-item" href="./dvouluzko.html">S vlastní koupelnou</a></li>
+            <li class="nav-item dropend ">
+              <a class="nav-link dropdown-toggle text-dark" href="./ubytovani.html" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Třílůžkový pokoj
+              </a>
+              <ul class="dropdown-menu ">
+                <li><a class="dropdown-item" href="">S vlastní koupelnou</a></li>
 
-                  <li><a class="dropdown-item" href="#">Se společnou koupelnou </a></li>
+                <li><a class="dropdown-item" href="#">Se společnou koupelnou </a></li>
 
+              </ul>
+            </li>
 
+            <li class="nav-item dropend ">
+              <a class="nav-link dropdown-toggle text-dark" href="./ubytovani.html" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Čtyřlůžkový pokoj
+              </a>
+              <ul class="dropdown-menu ">
+                <li><a class="dropdown-item" href="">S vlastní koupelnou</a></li>
 
-                </ul>
-              </li>
+                <li><a class="dropdown-item" href="#">Se společnou koupelnou </a></li>
 
-              <li class="nav-item dropend ">
-                <a class="nav-link dropdown-toggle text-dark" href="./ubytovani.html" role="button"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  Čtyřlůžkový pokoj
-                </a>
-                <ul class="dropdown-menu ">
-                  <li><a class="dropdown-item" href="./dvouluzko.html">S vlastní koupelnou</a></li>
-                  <li><a class="dropdown-item" href="#">Se společnou koupelnou </a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-dark scaleUp" href="#" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Restaurace
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Zámecká restaurace</a></li>
-              <li><a class="dropdown-item" href="#">Zámecká vinarna</a></li>
-              <li><a class="dropdown-item" href="#">Krčma na břehu</a></li>
-            </ul>
-          <li class="nav-item">
-            <a class="nav-link active scaleUp" aria-current="page" href="#">Společenské akce</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active scaleUp" aria-current="page" href="#contact-header">Svatby</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active scaleUp" aria-current="page" href="#fotogalerie">Fotogalerie</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active scaleUp" aria-current="page" href="#contact-header">Kontakt</a>
-          </li>
-          </li>
-        </ul>
-      </div>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark scaleUp" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Restaurace
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Zámecká restaurace</a></li>
+            <li><a class="dropdown-item" href="#">Zámecká vinarna</a></li>3
+            <li><a class="dropdown-item" href="#">Krčma na břehu</a></li>
+          </ul>
+        <li class="nav-item">
+          <a class="nav-link active scaleUp" aria-current="page" href="#">Společenské akce</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active scaleUp" aria-current="page" href="#contact-header">Svatby</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active scaleUp" aria-current="page" href="#fotogalerie">Fotogalerie</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active scaleUp" aria-current="page" href="#contact-header">Kontakt</a>
+        </li>
+        </li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
 
   <div class="news-container">
     <h2>Udalosti/Novinky</h2>
@@ -125,7 +122,7 @@
     <div class="card mb-3 new">
       <img
         src="https://061a38cc1e.clvaw-cdnwnd.com/6bcaeae67997544c7cf5f5587b1cbe32/system_preview_detail_200000009-1de871ee65/bazen03.jpg"" class="
-        card-img-top" alt="news_image" style="max-width: 100vw; border: none:  !important;">
+        card-img-top" alt="news_image" style="max-width: 100vw; border: none !important;">
       <div class="card-body">
         <h5 class="card-title">Nadpis udalosti/novinky</h5>
         <p class="card-text">Text novinky Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum temporibus
@@ -259,23 +256,23 @@
 
 
 
-  <footer style="background-color:rgb(219, 212, 205); width: 100vw; height: 300px; margin-top: 200px;"
-    class="d-flex justify-content-center shadow-lg">
+  <footer style="background-color:#504538; width: 100vw; height: 300px; margin-top: 200px;"
+    class="d-flex justify-content-center  ">
     <div class="d-flex flex-direction-row align-items-center footer-div" style="gap: 100px;">
-      <h2 class="text-dark">ZÁMEČEK <br>KALIŠTĚ</h2>
+      <h2 class="text-light">ZÁMEČEK <br>KALIŠTĚ</h2>
       <ul class="nav flex-row justify-content-center align-items-center" style="gap: 100px;">
         <li class="nav-item">
           <img src="./images/phoneIcon.png" alt="">
-          <p style="margin: 0;">+420 603 543 629</p>
-          <p> +420 603 814 590</p>
+          <p class="text-light" style="margin: 0;">+420 603 543 629</p>
+          <p class="text-light"> +420 603 814 590</p>
         </li>
         <li class="nav-item flex-column justify-content-center align-items-center">
           <img src="./images/mailIcon.png" alt="" style="max-width: 100px; margin-left: 60px; margin-bottom: 10px;">
-          <p>nazamecku.provoz@seznam.cz</p>
+          <p class="text-light">nazamecku.provoz@seznam.cz</p>
         </li>
       </ul>
-
-
+  
+  
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2571.341609611879!2d14.762702877082987!3d49.87361107148773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470c783a4bf2411b%3A0xec7e287c07d60512!2zWsOhbWXEjWVrIEthbGnFoXTEmw!5e0!3m2!1scs!2scz!4v1701177312625!5m2!1scs!2scz"
         width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"

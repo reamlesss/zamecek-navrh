@@ -6,7 +6,7 @@ body {
   margin: 0;
   padding: 0;
 font-family: 'Roboto Slab', serif;
-  background-color: white;
+  background-color: rgb(249, 238, 226) !important;
 }
 
 h2 {
@@ -45,6 +45,9 @@ h2 {
 }
 .mid-bg-4{
   background-image: url(./images/sauna.jpg);
+}
+.mid-bg-5{
+  background-image: url(./images/zamecek_v_noci.jpg);
 }
 #mid-text h1 {
   font-size: 70px;
@@ -92,8 +95,10 @@ h2 {
 }
 
 div#navbg {
-    /* background-color: white; */
-    background-color: rgb(219, 212, 205) ;
+    /* background-color: rgba(255, 255, 255, 0.113); */
+    /* background-color: rgb(219, 212, 205) ; */
+  /* background-color: rgb(249, 238, 226); */
+  background-color: #504538;
     
 }
 
@@ -115,14 +120,13 @@ div#navbg {
   
 }
 .dropdown-item{
-  color: black;
+  color: black !important;
 }
 .nav-link{
-  
-  color: black;
+  color: white !important;  
 }
 .navbar-brand{
-  color: black;
+  color: white !important;
 }
 
 .dropdown:hover > .dropdown-menu {
@@ -497,14 +501,21 @@ iframe:hover {
 
 .btn {
   /* background-color: rgb(61, 39, 28); */
-  background-color: rgb(219, 212, 205) ;
+  /* background-color: rgb(219, 212, 205) ; */
+  background-color: #504538;
   outline: none;
   border: none;
   transition: 0.5s all;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 .btn:active{
   background-color: transparent !important;
+}
+
+.btn:hover {
+  transform: scale(105%);
+  /* background-color: rgb(219, 212, 205) ; */
+  background-color: #504538;
 }
 
 .more-photos-button {
@@ -513,18 +524,14 @@ iframe:hover {
   margin-top: 3vh;
   margin-bottom: 3vh;
   transition: 1s;
-  color: black;
+  color: white;
 }
 #more-photos-button {
   padding-left: 5vw;
-  color: black;
+  color: white;
   padding-right: 5vw;
 }
-.btn:hover {
-  transform: scale(105%);
-  background-color: rgb(219, 212, 205) ;
-  color: black;
-}
+
 
 .gallery-container2-hidden {
   display: none;
@@ -543,7 +550,7 @@ iframe:hover {
   padding-left: 5vw;
   padding-right: 5vw;
   margin-bottom: 5vh;
-  color: black !important;
+  color: white !important;
 }
 .less-photos-button-hide {
   display: none;
