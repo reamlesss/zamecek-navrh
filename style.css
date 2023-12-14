@@ -601,25 +601,26 @@ iframe:hover {
 .ubyt-card:hover {
   transform: scale(90%);
 }
-.contact-form{
+.contact-form {
   gap: 10px;
   width: 100vw;
 }
-input{
-  
-  
-
+input {
 }
 
-.form-control{
+.form-control {
   width: 500px;
-  border: 1px solid#504538 !important; 
+  border: 1px solid#504538 !important;
+}
+.form-floating:focus {
+  outline: none !important;
 }
 
-#text-form{
-  
+#text-form {
 }
-.form-control:focus{
+.form-control:focus {
   outline-color: #504538;
   outline: none !important;
+  box-shadow: none !important;
+  transform: scale(105%);
 }
