@@ -7,14 +7,29 @@ body {
   padding: 0;
   font-family: "Roboto Slab", serif;
   background-color: rgb(249, 238, 226) !important;
+  /* background-color: white; */
 }
 
-.opacity-down{
+.opacity-down {
   opacity: 0;
   transition: 1s all;
 }
-.opacity-up{
+.opacity-up {
   opacity: 1;
+}
+
+.hidden-down {
+  transition: 1s all;
+  opacity: 0;
+  transform: translateY(100%);
+}
+.slide-up {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+.dropend .nav-link {
+  color: black !important;
 }
 
 h2 {
@@ -304,8 +319,6 @@ div#navbg {
   }
 }
 
-
-
 .news-container {
   display: flex;
   flex-direction: column;
@@ -343,6 +356,8 @@ div#navbg {
   max-width: 45vw;
   margin-top: 1vh;
   margin-bottom: 1vh;
+  background-color: transparent;
+  border: none;
 }
 
 .card-text-hidden {
@@ -548,6 +563,7 @@ iframe:hover {
 .table {
   max-width: 50vw;
   transition: 0.5s all;
+  --bs-table-bg: transparent;
   background-color: transparent !important;
 }
 
@@ -579,9 +595,31 @@ iframe:hover {
   margin-bottom: 0 !important;
   margin-top: 0 !important;
   transition: 1s all;
-  
+
   /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.115); */
 }
 .ubyt-card:hover {
   transform: scale(90%);
+}
+.contact-form{
+  gap: 10px;
+  width: 100vw;
+}
+input{
+  
+  
+
+}
+
+.form-control{
+  width: 500px;
+  border: 1px solid#504538 !important; 
+}
+
+#text-form{
+  
+}
+.form-control:focus{
+  outline-color: #504538;
+  outline: none !important;
 }

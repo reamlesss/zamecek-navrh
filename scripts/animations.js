@@ -6,14 +6,18 @@ const observer = new IntersectionObserver((entries) => {
 
       switch (animationType) {
           case 'opacity-up':
-            entry.target.classList.add('opacity-up');  
+          entry.target.classList.add('opacity-up');  
+        case 'slide-up':
+          entry.target.classList.add('slide-up');
       }
     }
   });
 });
 
-const downHiddenElements = document.querySelectorAll('.opacity-down');
-downHiddenElements.forEach((el) => observer.observe(el));
+const opacityHiddenElements = document.querySelectorAll('.opacity-down');
+opacityHiddenElements.forEach((el) => observer.observe(el));
+const hiddenDownElements = document.querySelectorAll('.hidden-down');
+hiddenDownElements.forEach((el) => observer.observe(el));
 // const leftHiddenElements = document.querySelectorAll(".hidden-left");
 // leftHiddenElements.forEach((el) => observer.observe(el));
 // const rightHiddenElements = document.querySelectorAll(".hidden-right");
