@@ -501,6 +501,7 @@ iframe:hover {
   transform: scale(105%);
   /* background-color: rgb(219, 212, 205) ; */
   background-color: #504538;
+  color: white;
 }
 
 .more-photos-button {
@@ -605,22 +606,25 @@ iframe:hover {
   gap: 10px;
   width: 100vw;
 }
-input {
-}
+
 
 .form-control {
   width: 500px;
   border: 1px solid#504538 !important;
+  
+}
+.form-floating{
+  transition: 1s all;
+}
+.form-floation:hover{
+  transform: scale(105%);
 }
 .form-floating:focus {
   outline: none !important;
 }
 
-#text-form {
-}
 .form-control:focus {
   outline-color: #504538;
   outline: none !important;
-  box-shadow: none !important;
-  transform: scale(105%);
+  box-shadow: none !important; 
 }

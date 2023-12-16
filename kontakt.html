@@ -17,7 +17,7 @@
 <!-- background-color: rgb(219, 212, 205) -->
 
 <body>
-
+ 
    
 
 
@@ -112,12 +112,26 @@
     </nav>
 
 
-    <!-- <h2 class="text-center fs-1">Kontakty</h2> -->
+    <h2 class="text-center fs-1">Kontakty</h2>
+ 
+    <div class="container d-flex justify-content-center flex-row" style="gap: 0px;">
+        <div class="container d-flex align-items-center flex-column">
+            <h3>Telefon</h3>
+            <p style="margin-bottom: 0px;">+420 603 543 629</p>
+            <p>+420 603 814 590</p>
+        </div>
+        <div class="container d-flex align-items-center flex-column" >
+            <h3>E-mail</h3>
+            <p style="margin-bottom: 0px;">nazamecku.provoz@seznam.cz</p>
+        </div>
+
+    </div>
 
 
     <h2 class="text-center fs-1">Napište nám</h2>
 
     <div class="container d-flex justify-content-center align-items-center flex-column contact-form">
+
         <div class="form-floating">
             <input type="text" class="form-control" id="nameInput" placeholder="name@example.com">
             <label for="nameInput">Jméno</label>
@@ -135,6 +149,7 @@
                     style="height: 100px"></textarea>
                 <label for="floatingTextarea2">Text</label>
             </div>
+            <button type="button" class="btn w-25" >Odeslat</button>
     </div>
 
    
