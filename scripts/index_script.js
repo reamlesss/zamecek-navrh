@@ -62,6 +62,4 @@ function changeBackground() {
 
 setInterval(changeBackground, 10000);
 
-function toUbytovani() {
-  window.location.href = "ubytovani.html";
-}
+
