@@ -325,17 +325,19 @@ div#navbg {
   justify-content: center;
   align-items: center;
   margin-top: 5vh;
+    
 }
 .news-container h2 {
   font-size: 40px;
   text-align: center;
 }
 .new {
-  background-color: white !important;
+  background-color: #50453800;
   padding: 10px;
-  border: none !important;
+  /* border: none !important; */
+  border: 1px solid white;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .new h3 {
@@ -356,7 +358,7 @@ div#navbg {
   max-width: 45vw;
   margin-top: 1vh;
   margin-bottom: 1vh;
-  background-color: transparent;
+  
   border: none;
 }
 
@@ -564,8 +566,8 @@ iframe:hover {
 .table {
   max-width: 50vw;
   transition: 0.5s all;
-  --bs-table-bg: transparent;
-  background-color: transparent !important;
+  --bs-table-bg: trasnparent;
+  --bs-table-border-color:black;
 }
 
 .table:hover {
