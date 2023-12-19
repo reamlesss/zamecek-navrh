@@ -325,7 +325,6 @@ div#navbg {
   justify-content: center;
   align-items: center;
   margin-top: 5vh;
-    
 }
 .news-container h2 {
   font-size: 40px;
@@ -358,7 +357,7 @@ div#navbg {
   max-width: 45vw;
   margin-top: 1vh;
   margin-bottom: 1vh;
-  
+
   border: none;
 }
 
@@ -567,7 +566,7 @@ iframe:hover {
   max-width: 50vw;
   transition: 0.5s all;
   --bs-table-bg: trasnparent;
-  --bs-table-border-color:black;
+  --bs-table-border-color: black;
 }
 
 .table:hover {
@@ -609,16 +608,14 @@ iframe:hover {
   width: 100vw;
 }
 
-
 .form-control {
   width: 500px;
   border: 1px solid#504538 !important;
-  
 }
-.form-floating{
+.form-floating {
   transition: 1s all;
 }
-.form-floation:hover{
+.form-floation:hover {
   transform: scale(105%);
 }
 .form-floating:focus {
@@ -628,5 +625,29 @@ iframe:hover {
 .form-control:focus {
   outline-color: #504538;
   outline: none !important;
-  box-shadow: none !important; 
+  box-shadow: none !important;
+}
+
+.link {
+  color: #504538;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.restaurace-container img {
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+.zamecka-container img {
+  border-radius: 10px !important;
+}
+.photos-container img {
+  max-width: 400px;
+  transition: 0.5s all;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.245);
+}
+.photos-container img:hover {
+  transform: scale(105%);
 }
