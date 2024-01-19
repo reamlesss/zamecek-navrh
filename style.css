@@ -8,6 +8,7 @@ body {
   font-family: "Roboto Slab", serif;
   background-color: rgb(249, 238, 226) !important;
   /* background-color: white; */
+  scroll-behavior: smooth;
 }
 
 .opacity-down {
@@ -92,7 +93,7 @@ h2 {
   height: 100vh;
 }
 .navbar {
-  z-index: 2;
+  z-index: 99 !important;
   height: 10px;
   color: white !important;
   /* background-color: rgba(0, 0, 0, 0.365); */
